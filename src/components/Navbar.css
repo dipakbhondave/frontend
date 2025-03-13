@@ -1,0 +1,183 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--navbar-bg);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Center Dark Mode Toggle */
+  .theme-toggle {
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Change icon color based on theme */
+  body.light .theme-toggle {
+    color: #222;
+  }
+  
+  body.dark .theme-toggle {
+    color: #ffcc00;
+  }
+  
+  /* Login Section */
+  .login-section {
+    list-style: none;
+  }
+  
+  /* Light & Dark Mode Variables */
+  :root {
+    --navbar-bg: #fff;
+    --text-color: #333;
+    --accent-color: #8b500c;
+  }
+  
+  body.dark {
+    --navbar-bg: #222;
+    --text-color: #fff;
+    --accent-color: #ffcc00;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  /* Global Theme Styles */
+:root {
+    --bg-color-light: #ffffff;
+    --text-color-light: #333;
+    --bg-color-dark: #121212;
+    --text-color-dark: #ffffff;
+  }
+  
+  /* Apply Dynamic Theming */
+  body.light {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+  }
+  
+  body.dark {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: var(--bg-color-dark);
+    color: var(--text-color-dark);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  body.light .navbar {
+    background: var(--bg-color-light);
+    color: var(--text-color-light);
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: var(--text-color-dark);
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  body.light .nav-links li a {
+    color: var(--text-color-light);
+  }
+  
+  .nav-links li a:hover {
+    color: #ffcc00;
+  }
+  
+  /* Dark Mode Toggle Button */
+  .theme-toggle {
+    background: transparent;
+    border: none;
+    color: var(--text-color-dark);
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  body.light .theme-toggle {
+    color: var(--text-color-light);
+  }
+  
+  /* Login Section */
+  .login-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login {
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--text-color-dark);
+  }
+  
+  body.light .login {
+    color: var(--text-color-light);
+  }
+  

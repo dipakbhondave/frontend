@@ -1,0 +1,124 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .about-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .about-content h1 {
+    font-size: 2rem;
+    color: #ff5733;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Dark Mode */
+  body.dark .about-content h1 {
+    color: #ffcc00;
+  }
+  
+  body.dark .about-content p {
+    color: #ddd;
+  }
+  
+  /* Animated Name Styling */
+  .sub-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+    text-transform: uppercase;
+  }
+  
+  .name-highlight {
+    font-size: 28px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    margin-left: 8px;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+        text-shadow: 0px 0px 5px rgba(255, 165, 0, 0.7);
+    }
+    100% {
+        text-shadow: 0px 0px 15px rgba(255, 165, 0, 1);
+    }
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    font-size: 35px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Individual Social Media Colors */
+  .instagram { color: #E4405F; }
+  .facebook { color: #1877F2; }
+  .twitter { color: #1DA1F2; }
+  
+  /* Hover Effects */
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Dark Mode */
+  body.dark .about-content h1 {
+    color: #ffcc00;
+  }
+  
+  body.dark .about-content p {
+    color: #ddd;
+  }
+  
+  body.dark .icon {
+    color: #aaa;
+  }
+  
+  body.dark .icon:hover {
+    color: white;
+  }
+  
+  /* Image Styling */
+  .about-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  
